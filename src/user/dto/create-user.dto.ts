@@ -20,17 +20,11 @@ export class CreateUserDto {
     @IsString()
     password:string
 
-<<<<<<< HEAD
     @IsString()
     @IsOptional()
     role:string
 
-@IsOptional()
-@IsString()
-refreshToken:string |  null
-=======
-   
->>>>>>> hamed/feature-auth-hamed
+
 
 
 }

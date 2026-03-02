@@ -96,14 +96,6 @@ message :"user not found"+error.message
    }
   }
 
-<<<<<<< HEAD
-
-
-
-
-
-=======
->>>>>>> hamed/feature-auth-hamed
   @Put('/update-password/:id')
   async updatePassword(@Body()  UpdatPasswordDto : updatePasswordDto, @Res() res, @Param('id') id: number ){
     try {

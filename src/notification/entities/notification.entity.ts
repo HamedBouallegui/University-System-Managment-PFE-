@@ -28,9 +28,5 @@ export class Notification {
   @Column()
   lu: boolean;
 
-  @ManyToOne(() => User, user => user.notifications,{
-    onDelete:'CASCADE'
-})
-@JoinColumn({name:"user"})
-  user: User;
+ 
 }

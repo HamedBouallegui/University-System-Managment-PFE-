@@ -23,7 +23,7 @@ export class NotificationService {
     if(!user){
       throw new NotFoundException("user not found")
     }
-       const newnotification = await this.notificationRepository.create({...createNotificationDto,user})
+       const newnotification = await this.notificationRepository.create({...createNotificationDto,})
     return this.notificationRepository.save(newnotification)
     }
 
